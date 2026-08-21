@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+#container-nav-bar {
+    background-color: rgb(0, 0, 163);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+.nav-flex label,input,#hamburger {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: rgb(170, 0, 0);
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+nav ul li a:hover {
+    background-color: azure;
+    color: rgb(170, 0, 0);
+    transition: all (0,2s);
+}
+.nav-brand h2 {
+    margin: 15px 0 0 10px;
+    color: rgb(170, 0, 0);
+}
+#main-container {
+    background-image: url(Gambar/The-Beatles-.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text {
+    text-align: center;
+    color: rgb(170, 0, 0);
+    font-size: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.button {
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 184);
+    padding: 8px;
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100px;
+}
+.button:hover {
+    background-color: azure;
+    color: rgba(224, 0, 0, 0.925);
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+/* About */
+#About h1 {
+    color: rgba(197, 0, 0, 0.822);
+    text-align: center;
+    margin-top: 60px;
+}
+#About .about-deskripsi {
+    text-align: center;
+    color: rgb(0, 0, 197);
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto;
+}
+.about-image,.about-text {
+    width: 50%;
+    margin: 15px;
+}
+.about-image img {
+    width: 100%;
+    object-fit: cover;
+
+}
+#services h1 {
+    color: rgba(0, 0, 187, 0.856);
+    text-align: center;
+    margin-top: 60px;
+}
+#services .services-deskripsi {
+    text-align: center;
+    color: rgba(0, 0, 187, 0.856);
+}
+.services-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.services-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.services-items .fas {
+    color: rgb(216, 0, 0);
+}
+#catalogue h1 {
+    text-align: center;
+    color: rgba(0, 0, 187, 0.87);
+    margin-top: 60px;
+}
+.catalogue-deskripsi {
+    text-align: center;
+    color: rgba(0, 0, 167, 0.918);
+}
+.catalogue-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px  auto;
+}
+.catalogue-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.catalogue-items img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid blue;
+    object-fit: cover;
+}
+.catalogue-items h3 {
+    color: rgb(0, 0, 211);
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.catalogue-items p {
+    font-size: 16px;
+    color: rgba(179, 0, 0, 0.911);
+}
+.price-container {
+    border-bottom: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px;
+}
+.price-items span {
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.price-button button {
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color:blue;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.price-button button:hover {
+    background-color: rgba(201, 0, 0, 0.932);
+}
+/* Portfolio */
+#portfolio h1 {
+    color: rgba(0, 0, 189, 0.897);
+    text-align: center;
+    margin-top: 60px;
+}
+#portfolio .portfolio-deskripsi {
+    text-align: center;
+    color: rgba(207, 0, 0, 0.959);
+}
+.portfolio-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.portfolio-items {
+    width: 25%;
+    padding: 10px;
+}
+.portfolio-items img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid blue;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.portfolio-items img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* Contact */
+#contact h1 {
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(0, 0, 165, 0.89);
+}
+.contact-deskripsi {
+    text-align: center;
+    color: rgba(190, 0, 0, 0.979);
+}
+.contact-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.map {
+    width: 60%;
+}
+.map h3 {
+    text-align: center;
+    color: rgba(0, 0, 189, 0.918);
+}
+.map iframe {
+    border-radius: 10px;
+}
+.social-media {
+    width: 40%;
+    padding: 10px;
+}
+.social-media h3 {
+    text-align: center;
+    color: rgba(0, 0, 189, 0.918);
+}
+.social-items {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 10px;
+}
+.facebook {
+    background-color: rgba(0, 0, 177, 0.897);
+}
+.twitter {
+    background-color: #1da1f2;
+}
+.instagram {
+    background-color: #e4405f;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+.social-items:hover {
+    opacity: 0.8;
+}
+/* Footer */
+.footer-container {
+    margin-top: 60px;
+    background-color: rgba(0, 0, 168, 0.897);
+    color: antiquewhite;
+    padding: 30px 5px; 
+}
+.footer-container a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.footer-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footer-flex section {
+    width: 25%;
+    text-align: center;
+}
+.footer-flex section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer h3 {
+    margin-top: 0;
+}
+.footer-copyright {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.footer-copyright a:hover {
+    text-decoration: none;
+}
+/* versi tablet */
+@media screen and (max-width: 770px) {
+    #container-nav-bar .nav-flex label {
+        display: inline-block;
+        color: rgba(224, 0, 0, 0.925);
+        font-style: normal;
+        font-size: 32px;
+        padding: 10px;
+    }
+    #container-nav-bar .nav-flex{
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    nav ul li a {
+        display: block;
+        color: antiquewhite;
+        background-color: rgb(0, 0, 212);
+        padding: 0 30px;
+        height: auto;
+    }
+    .nav-brand h2 {
+        position: absolute;
+        right: 20px;
+    }
+    /* menampilkan dan menyembunyikan menu */
+    #container-nav-bar nav {
+        display: none;
+    }
+    /* menampilkan menu ketika tag bar diklik */
+    #container-nav-bar .nav-flex input:checked ~ nav {
+        display: flex;
+    }
+
+    /* About */
+    .about-flex{
+        flex-direction: column;
+    }
+    .about-image,.about-text {
+        width: auto;
+    }
+
+    /* Services */
+    .services-items {
+        width: 50%;
+    }
+    /* Catalogue */
+    .catalogue-items {
+        width: 50%;
+    }
+    /* Portfolio */
+    .portfolio-items {
+        width: 30%;
+        justify-content: space-between;
+    }
+    /* Contact */
+    .contact-flex {
+        flex-direction: column;
+    }
+    .map,.social-media {
+        width: 100%;
+    }
+    /* Footer */
+    .footer-flex section {
+        width: 50%;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width:481px) {
+    .services-items {
+        width: 100%;
+    }
+    .catalogue-items {
+        width: 100%;
+    }
+    .portfolio-items {
+        width: 50%;
+    }
+    .footer-flex section {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
